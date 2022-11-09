@@ -1,0 +1,38 @@
+@mixin bg-img($img) {
+  background-image: url("/img/#{$img}");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+
+@mixin layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@mixin btn {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+

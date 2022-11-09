@@ -1,0 +1,46 @@
+/*SEÇÃO SOBRE*/
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  height: 670px;
+  padding: 60px 0px;
+  main {
+    display: flex;
+    #side-left {
+      flex: 1;
+      h2 {
+        font-size: 36px;
+        font-weight: 400;
+        font-family: "Montserrat";
+      }
+      p {
+        margin: 30px 0;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--dark);
+        line-height: 26px;
+      }
+      figure {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        img {
+          width: 255px;
+          height: 124px;
+          pointer-events: none;
+        }
+      }
+    }
+    #side-right {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      img {
+        width: 442px;
+        height: 520px;
+      }
+    }
+  }
+}
