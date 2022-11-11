@@ -1,4 +1,7 @@
 /*HEADER*/
+.menu-opened {
+  width: 220px !important;
+}
 header {
   background-color: var(--white);
   main {
@@ -34,38 +37,40 @@ header {
       display: none;
       position: fixed;
       overflow: hidden;
-      width: 220px;
+      width: 0px;
       z-index: 2;
       top: 0px;
-      left: -220px;
+      left: 0px;
       transition: all 0.5s ease;
-      #close{
+      background-color: rgba(3, 3, 3, 0.8);
+      #close {
         position: absolute;
         font-size: 30px;
         margin: 10px 20px;
         text-align: right;
         width: 80%;
         font-weight: bold;
+        color: var(--white);
       }
       ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: var(--white);
         height: 100vh;
         li {
           margin-bottom: 20px;
           a {
-            color: var(--dark);
+            color: var(--white);
+            &:hover {
+              background-color: transparent;
+              color: var(--light-gray);
+            }
           }
         }
       }
-      .menu-opened {
-        left: -220px !important;
-      }
     }
-    #hamburguer {
+    #menu {
       display: none;
       width: 40px;
       height: 30px;

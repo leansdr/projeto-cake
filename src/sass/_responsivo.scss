@@ -1,5 +1,5 @@
 /*RESPONSIVO*/
-@media (min-width: 320px) and (max-width: 426px) {
+@media (max-width: 425px) {
   main {
     overflow: hidden;
     padding: 0px 28px;
@@ -9,10 +9,10 @@
       nav {
         display: none;
       }
-      #menu-mobile{
+      #menu-mobile {
         display: block;
       }
-      #hamburguer{
+      #menu {
         display: block;
       }
     }
@@ -91,6 +91,7 @@
     #how-work-info {
       display: flex;
       flex-direction: column;
+      height: 100%;
       #how-work-img {
         img {
           width: 300px;
@@ -105,9 +106,6 @@
         #how-work-grid {
           display: flex;
           flex-direction: column;
-          #grid-item {
-            grid-template-rows: repeat(2, 1fr);
-          }
         }
       }
     }
@@ -138,8 +136,8 @@
       #testimonials {
         flex-direction: column;
         gap: 25px;
-        #testimonial{
-          margin: 0 10px;
+        #testimonial {
+          width: 100%;
         }
       }
     }
@@ -165,7 +163,7 @@
     }
   }
 }
-@media (min-width: 426px) and (max-width: 1024px) {
+@media (min-width: 426px) and (max-width: 768px) {
   main {
     overflow: hidden;
     padding: 0px 22px;
@@ -293,7 +291,7 @@
     padding-bottom: 50px;
     main {
       #container-form {
-        flex-direction:row;
+        flex-direction: row;
         #contact-img {
           display: flex;
           align-items: center;

@@ -24,14 +24,14 @@
         font-family: "Montserrat";
       }
       #how-work-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        height: 397px;
-        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 60vh;
         #grid-item {
           background-color: var(--white);
-          gap: 3px;
           padding: 10px;
+          width: 280px;
           h6 {
             margin: 17px 0px;
             font-weight: bold;
