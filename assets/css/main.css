@@ -265,7 +265,7 @@ header main #menu .line {
   padding: 10px;
 }
 #catalog #container-catalog ul li #fig01 {
-  background-image: url("/img/catalog-fig01.jpg");
+  background-image: url("../../public/img/catalog-fig01.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -299,7 +299,7 @@ header main #menu .line {
   cursor: pointer;
 }
 #catalog #container-catalog ul li #fig02 {
-  background-image: url("/img/catalog-fig02.jpg");
+  background-image: url("../../public/img/catalog-fig02.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -333,7 +333,7 @@ header main #menu .line {
   cursor: pointer;
 }
 #catalog #container-catalog ul li #fig03 {
-  background-image: url("/img/catalog-fig03.jpg");
+  background-image: url("../../public/img/catalog-fig03.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -367,7 +367,7 @@ header main #menu .line {
   cursor: pointer;
 }
 #catalog #container-catalog ul li #fig04 {
-  background-image: url("/img/catalog-fig04.jpg");
+  background-image: url("../../public/img/catalog-fig04.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -401,7 +401,7 @@ header main #menu .line {
   cursor: pointer;
 }
 #catalog #container-catalog ul li #fig05 {
-  background-image: url("/img/catalog-fig05.jpg");
+  background-image: url("../../public/img/catalog-fig05.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -435,7 +435,7 @@ header main #menu .line {
   cursor: pointer;
 }
 #catalog #container-catalog ul li #fig06 {
-  background-image: url("/img/catalog-fig06.jpg");
+  background-image: url("../../public/img/catalog-fig06.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -469,7 +469,7 @@ header main #menu .line {
   cursor: pointer;
 }
 #catalog #container-catalog ul li #fig07 {
-  background-image: url("/img/catalog-fig07.jpg");
+  background-image: url("../../public/img/catalog-fig07.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -503,7 +503,7 @@ header main #menu .line {
   cursor: pointer;
 }
 #catalog #container-catalog ul li #fig08 {
-  background-image: url("/img/catalog-fig08.jpg");
+  background-image: url("../../public/img/catalog-fig08.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -636,7 +636,7 @@ header main #menu .line {
   padding: 10px;
 }
 #best-choice #container-catalog ul li #fig09 {
-  background-image: url("/img/catalog-fig09.jpg");
+  background-image: url("../../public/img/catalog-fig09.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -670,7 +670,7 @@ header main #menu .line {
   cursor: pointer;
 }
 #best-choice #container-catalog ul li #fig10 {
-  background-image: url("/img/catalog-fig10.jpg");
+  background-image: url("../../public/img/catalog-fig10.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -704,7 +704,7 @@ header main #menu .line {
   cursor: pointer;
 }
 #best-choice #container-catalog ul li #fig11 {
-  background-image: url("/img/catalog-fig11.jpg");
+  background-image: url("../../public/img/catalog-fig11.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -738,7 +738,7 @@ header main #menu .line {
   cursor: pointer;
 }
 #best-choice #container-catalog ul li #fig12 {
-  background-image: url("/img/catalog-fig12.jpg");
+  background-image: url("../../public/img/catalog-fig12.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
