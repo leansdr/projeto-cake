@@ -63,6 +63,11 @@
             border: 2px solid var(--dark);
             text-transform: uppercase;
             font-weight: bold;
+            cursor: pointer;
+            &:hover {
+              background-color: var(--dark);
+              color: var(--white);
+            }
           }
         }
       }

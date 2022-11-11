@@ -2,6 +2,7 @@
   "name": "making-cake",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
