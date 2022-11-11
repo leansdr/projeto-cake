@@ -586,7 +586,6 @@ header main #menu .line {
   height: 60vh;
 }
 #how-work #how-work-info #how-work-description #how-work-grid .grid-item {
-  flex: 1;
   background-color: var(--white);
   padding: 10px;
   width: 280px;
