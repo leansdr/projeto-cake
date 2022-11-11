@@ -1,0 +1,1167 @@
+@charset "UTF-8";
+/*PADRÃO*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 0.8em;
+}
+
+main {
+  max-width: 1140px;
+  margin: auto;
+}
+
+/*VARIAVEIS*/
+:root {
+  --light-green: #f2faf8;
+  --dark: #000;
+  --white: #fff;
+  --gray: #f2f2f2;
+  --light-gray: #b3b3b3;
+  --dark-gray: #999999;
+  --blue: #0077b6;
+  --black: #333;
+}
+
+/*HEADER*/
+.menu-opened {
+  width: 220px !important;
+}
+
+header {
+  background-color: var(--white);
+}
+header main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+header main figure {
+  width: 32px;
+  height: 32px;
+  background-color: var(--dark);
+}
+header main nav ul {
+  display: flex;
+  list-style: none;
+}
+header main nav ul li a {
+  text-decoration: none;
+  color: var(--dark);
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+header main nav ul li a:hover {
+  background-color: var(--light-green);
+  color: var(--dark);
+}
+header main #menu-mobile {
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  width: 0px;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  transition: all 0.5s ease;
+  background-color: rgba(3, 3, 3, 0.8);
+}
+header main #menu-mobile #close {
+  position: absolute;
+  font-size: 30px;
+  margin: 10px 20px;
+  text-align: right;
+  width: 80%;
+  font-weight: bold;
+  color: var(--white);
+}
+header main #menu-mobile ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+header main #menu-mobile ul li {
+  margin-bottom: 20px;
+}
+header main #menu-mobile ul li a {
+  color: var(--white);
+}
+header main #menu-mobile ul li a:hover {
+  background-color: transparent;
+  color: var(--light-gray);
+}
+header main #menu {
+  display: none;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+header main #menu .line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0px;
+}
+
+/*SEÇÃO BANNER*/
+#banner {
+  background-color: var(--light-green);
+  height: 723px;
+}
+#banner main #banner-info {
+  display: flex;
+  padding-top: 100px;
+}
+#banner main #banner-info #banner-description {
+  flex: 1;
+  padding-right: 30px;
+}
+#banner main #banner-info #banner-description h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  width: 280px;
+}
+#banner main #banner-info #banner-description p {
+  font-size: 16;
+  font-weight: 400;
+  font-family: "Open Sans";
+  line-height: 26px;
+}
+#banner main #banner-info #banner-description #rede-social {
+  display: flex;
+  align-items: center;
+}
+#banner main #banner-info #banner-description #rede-social img {
+  margin: 15px 16px 0px 0px;
+}
+#banner main #banner-info #banner-imagem {
+  flex: 1;
+}
+#banner main #banner-info #banner-imagem img {
+  width: 440px;
+  height: 517px;
+  pointer-events: none;
+}
+#banner main #banner-info #banner-price {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 15px;
+}
+#banner main #banner-info #banner-price #banner-price-info h5 {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+#banner main #banner-info #banner-price #banner-price-info p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Open Sans";
+  margin: 25px 0;
+}
+#banner main #banner-info #banner-price #banner-price-info button {
+  padding: 12px 48px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 2px solid var(--dark);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*SEÇÃO SOBRE*/
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  height: 670px;
+  padding: 60px 0px;
+}
+#about main {
+  display: flex;
+}
+#about main #side-left {
+  flex: 1;
+}
+#about main #side-left h2 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+#about main #side-left p {
+  margin: 30px 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark);
+  line-height: 26px;
+}
+#about main #side-left figure {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#about main #side-left figure img {
+  width: 255px;
+  height: 124px;
+  pointer-events: none;
+}
+#about main #side-right {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+#about main #side-right img {
+  width: 442px;
+  height: 520px;
+}
+
+/*SEÇÃO CATALOGO*/
+#catalog {
+  background-color: var(--gray);
+  height: 1095px;
+}
+#catalog h2 {
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--dark);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 100%;
+  padding: 60px 0px 30px 0px;
+}
+#catalog #container-catalog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 0px;
+}
+#catalog #container-catalog ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+#catalog #container-catalog ul li {
+  width: 277px;
+  height: 448px;
+  background-color: var(--white);
+  cursor: pointer;
+  padding: 10px;
+}
+#catalog #container-catalog ul li #fig01 {
+  background-image: url("/img/catalog-fig01.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#catalog #container-catalog ul li #fig01 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#catalog #container-catalog ul li #fig01 #layer:hover {
+  opacity: 1;
+}
+#catalog #container-catalog ul li #fig01 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#catalog #container-catalog ul li #fig02 {
+  background-image: url("/img/catalog-fig02.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#catalog #container-catalog ul li #fig02 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#catalog #container-catalog ul li #fig02 #layer:hover {
+  opacity: 1;
+}
+#catalog #container-catalog ul li #fig02 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#catalog #container-catalog ul li #fig03 {
+  background-image: url("/img/catalog-fig03.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#catalog #container-catalog ul li #fig03 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#catalog #container-catalog ul li #fig03 #layer:hover {
+  opacity: 1;
+}
+#catalog #container-catalog ul li #fig03 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#catalog #container-catalog ul li #fig04 {
+  background-image: url("/img/catalog-fig04.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#catalog #container-catalog ul li #fig04 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#catalog #container-catalog ul li #fig04 #layer:hover {
+  opacity: 1;
+}
+#catalog #container-catalog ul li #fig04 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#catalog #container-catalog ul li #fig05 {
+  background-image: url("/img/catalog-fig05.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#catalog #container-catalog ul li #fig05 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#catalog #container-catalog ul li #fig05 #layer:hover {
+  opacity: 1;
+}
+#catalog #container-catalog ul li #fig05 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#catalog #container-catalog ul li #fig06 {
+  background-image: url("/img/catalog-fig06.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#catalog #container-catalog ul li #fig06 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#catalog #container-catalog ul li #fig06 #layer:hover {
+  opacity: 1;
+}
+#catalog #container-catalog ul li #fig06 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#catalog #container-catalog ul li #fig07 {
+  background-image: url("/img/catalog-fig07.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#catalog #container-catalog ul li #fig07 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#catalog #container-catalog ul li #fig07 #layer:hover {
+  opacity: 1;
+}
+#catalog #container-catalog ul li #fig07 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#catalog #container-catalog ul li #fig08 {
+  background-image: url("/img/catalog-fig08.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#catalog #container-catalog ul li #fig08 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#catalog #container-catalog ul li #fig08 #layer:hover {
+  opacity: 1;
+}
+#catalog #container-catalog ul li #fig08 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#catalog #container-catalog ul li h6 {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: var(--dark);
+  margin: 30px 10px 21px;
+}
+#catalog #container-catalog ul li span {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--dark);
+  font-family: "Montserrat";
+  margin-left: 10px;
+}
+
+/*SEÇÃO HOW WORK*/
+#how-work {
+  background-color: var(--light-green);
+  height: 670px;
+  padding: 60px 0px;
+}
+#how-work #how-work-info {
+  display: flex;
+}
+#how-work #how-work-info #how-work-img {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+#how-work #how-work-info #how-work-img img {
+  width: 442px;
+  height: 520px;
+  pointer-events: none;
+}
+#how-work #how-work-info #how-work-description {
+  flex: 1;
+}
+#how-work #how-work-info #how-work-description h2 {
+  padding: 30px 0px 20px;
+  font-weight: 400;
+  font-size: 36px;
+  font-family: "Montserrat";
+}
+#how-work #how-work-info #how-work-description #how-work-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 60vh;
+}
+#how-work #how-work-info #how-work-description #how-work-grid #grid-item {
+  background-color: var(--white);
+  padding: 10px;
+  width: 280px;
+}
+#how-work #how-work-info #how-work-description #how-work-grid #grid-item h6 {
+  margin: 17px 0px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+#how-work #how-work-info #how-work-description #how-work-grid #grid-item p {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Open Sans";
+}
+
+/*SEÇÃO BEST CHOICE*/
+#best-choice {
+  background-color: var(--gray);
+  height: 670px;
+}
+#best-choice h2 {
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--dark);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 100%;
+  padding: 60px 0px 30px 0px;
+}
+#best-choice #container-catalog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 0px;
+}
+#best-choice #container-catalog ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+#best-choice #container-catalog ul li {
+  width: 277px;
+  height: 448px;
+  background-color: var(--white);
+  cursor: pointer;
+  padding: 10px;
+}
+#best-choice #container-catalog ul li #fig09 {
+  background-image: url("/img/catalog-fig09.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#best-choice #container-catalog ul li #fig09 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#best-choice #container-catalog ul li #fig09 #layer:hover {
+  opacity: 1;
+}
+#best-choice #container-catalog ul li #fig09 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#best-choice #container-catalog ul li #fig10 {
+  background-image: url("/img/catalog-fig10.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#best-choice #container-catalog ul li #fig10 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#best-choice #container-catalog ul li #fig10 #layer:hover {
+  opacity: 1;
+}
+#best-choice #container-catalog ul li #fig10 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#best-choice #container-catalog ul li #fig11 {
+  background-image: url("/img/catalog-fig11.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#best-choice #container-catalog ul li #fig11 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#best-choice #container-catalog ul li #fig11 #layer:hover {
+  opacity: 1;
+}
+#best-choice #container-catalog ul li #fig11 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#best-choice #container-catalog ul li #fig12 {
+  background-image: url("/img/catalog-fig12.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 312px;
+  position: relative;
+}
+#best-choice #container-catalog ul li #fig12 #layer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  margin-left: 0px;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#best-choice #container-catalog ul li #fig12 #layer:hover {
+  opacity: 1;
+}
+#best-choice #container-catalog ul li #fig12 #layer button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#best-choice #container-catalog ul li h6 {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: var(--dark);
+  margin: 30px 10px 21px;
+}
+#best-choice #container-catalog ul li span {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--dark);
+  font-family: "Montserrat";
+  margin-left: 10px;
+}
+
+#people-say {
+  background-color: var(--light-green);
+  height: 660px;
+}
+#people-say h6 {
+  font-weight: 400;
+  font-size: 36px;
+  font-family: "Montserrat";
+  text-align: center;
+  padding: 40px 0px;
+}
+#people-say #testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#people-say #testimonials #testimonial {
+  width: 352px;
+  background-color: var(--white);
+  padding: 30px;
+  border: 5px solid var(--gray);
+  border-radius: 5px;
+}
+#people-say #testimonials #testimonial figure {
+  width: 100%;
+}
+#people-say #testimonials #testimonial figure img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+#people-say #testimonials #testimonial h5 {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: var(--dark);
+  margin: 20px 0px 28px;
+}
+#people-say #testimonials #testimonial p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans";
+  line-height: 22px;
+  margin-bottom: 30px;
+  color: var(--dark-gray);
+}
+#people-say #testimonials #testimonial #data {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  color: var(--light-gray);
+}
+
+/*CONTACT*/
+#contact {
+  background-color: var(--gray);
+  height: 670px;
+  padding: 30px 0px;
+}
+#contact #container-form {
+  display: flex;
+  justify-content: space-between;
+}
+#contact #container-form #contact-form {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact #container-form #contact-form h2 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  margin: 30px 0px;
+}
+#contact #container-form #contact-form form #form-control {
+  margin-bottom: 10px;
+}
+#contact #container-form #contact-form form #form-control input {
+  width: 100%;
+  height: 50px;
+  background-color: var(--gray);
+  outline: none;
+  border: 1px solid var(--dark);
+  padding: 10px;
+}
+#contact #container-form #contact-form form #form-control #text-area {
+  width: 100%;
+  background-color: var(--gray);
+  padding: 10px;
+  resize: none;
+  border: 1px solid var(--dark);
+  outline: none;
+}
+#contact #container-form #contact-form form input[type=submit] {
+  padding: 10px 35px;
+  border: 1px solid var(--dark);
+}
+#contact #container-form #contact-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+#contact #container-form #contact-img img {
+  width: 442px;
+  height: 520px;
+  pointer-events: none;
+}
+
+footer {
+  height: 133px;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: var(--white);
+}
+
+/*RESPONSIVO*/
+@media (max-width: 425px) {
+  main {
+    overflow: hidden;
+    padding: 0px 28px;
+  }
+  header main nav {
+    display: none;
+  }
+  header main #menu-mobile {
+    display: block;
+  }
+  header main #menu {
+    display: block;
+  }
+  #banner {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #banner main #banner-info {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  #banner main #banner-info #banner-description {
+    padding-right: 0px;
+  }
+  #banner main #banner-info #banner-description h2 {
+    font-size: 24px;
+  }
+  #banner main #banner-info #banner-imagem {
+    margin: 20px 0px;
+  }
+  #banner main #banner-info #banner-imagem img {
+    width: 251px;
+    height: 295px;
+  }
+  #about {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #about main {
+    display: flex;
+    flex-direction: column;
+  }
+  #about main #side-left h2 {
+    font-size: 24px;
+  }
+  #about main #side-left p {
+    margin: 15px 0px;
+  }
+  #about main #side-left figure {
+    margin-bottom: 20px;
+  }
+  #about main #side-left figure img {
+    width: 255px;
+    height: 124px;
+  }
+  #about main #side-right img {
+    width: 300px;
+    height: 352px;
+  }
+  #catalog {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #catalog main h2 {
+    font-size: 24px;
+  }
+  #catalog main #container-catalog ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  #how-work {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #how-work #how-work-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  #how-work #how-work-info #how-work-img img {
+    width: 300px;
+    height: 353px;
+  }
+  #how-work #how-work-info #how-work-description h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  #how-work #how-work-info #how-work-description #how-work-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  #best-choice {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #best-choice main h2 {
+    font-size: 24px;
+  }
+  #best-choice main #container-catalog ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  #people-say {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #people-say main h6 {
+    font-size: 24px;
+  }
+  #people-say main #testimonials {
+    flex-direction: column;
+    gap: 25px;
+  }
+  #people-say main #testimonials #testimonial {
+    width: 100%;
+  }
+  #contact {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  #contact main #container-form {
+    flex-direction: column;
+  }
+  #contact main #container-form #contact-form h2 {
+    font-size: 24px;
+  }
+  #contact main #container-form #contact-img img {
+    width: 300px;
+    height: 353px;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  main {
+    overflow: hidden;
+    padding: 0px 22px;
+  }
+  header main nav {
+    display: none;
+  }
+  #banner {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  #banner main #banner-info {
+    flex-direction: row;
+    height: 100%;
+    padding-top: 50px;
+  }
+  #banner main #banner-info #banner-description {
+    width: 40%;
+    padding: 0px;
+  }
+  #banner main #banner-info #banner-imagem {
+    width: 300px;
+    height: 353px;
+    margin: 0 10px;
+  }
+  #banner main #banner-info #banner-imagem img {
+    width: 100%;
+    height: 100%;
+  }
+  #banner main #banner-info #banner-price {
+    padding: 0px;
+  }
+  #about {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #about main {
+    display: flex;
+    flex-direction: row;
+  }
+  #about main #side-left figure {
+    margin-bottom: 20px;
+  }
+  #about main #side-left figure img {
+    width: 255px;
+    height: 124px;
+  }
+  #about main #side-right {
+    display: flex;
+    align-items: center;
+  }
+  #about main #side-right img {
+    width: 300px;
+    height: 352px;
+  }
+  #catalog {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #catalog main #container-catalog ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  #how-work {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #how-work #how-work-info {
+    display: flex;
+    flex-direction: row;
+  }
+  #how-work #how-work-info #how-work-description #how-work-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  #how-work #how-work-info #how-work-img {
+    display: flex;
+    align-items: center;
+  }
+  #how-work #how-work-info #how-work-img img {
+    width: 300px;
+    height: 353px;
+  }
+  #best-choice {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #best-choice main #container-catalog ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  #people-say {
+    height: 100%;
+    padding-bottom: 80px;
+  }
+  #people-say main #testimonials {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+  }
+  #contact {
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  #contact main #container-form {
+    flex-direction: row;
+  }
+  #contact main #container-form #contact-img {
+    display: flex;
+    align-items: center;
+  }
+  #contact main #container-form #contact-img img {
+    width: 300px;
+    height: 353px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

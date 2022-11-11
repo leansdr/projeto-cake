@@ -1,0 +1,71 @@
+/*SEÇÃO BANNER*/
+#banner {
+  background-color: var(--light-green);
+  height: 723px;
+
+  main {
+    #banner-info {
+      display: flex;
+      padding-top: 100px;
+
+      #banner-description {
+        flex: 1;
+        padding-right: 30px;
+        h2 {
+          font-size: 36px;
+          font-weight: 400;
+          margin-bottom: 20px;
+          width: 280px;
+        }
+        p {
+          font-size: 16;
+          font-weight: 400;
+          font-family: "Open Sans";
+          line-height: 26px;
+        }
+        #rede-social {
+          display: flex;
+          align-items: center;
+          img {
+            margin: 15px 16px 0px 0px;
+          }
+        }
+      }
+      #banner-imagem {
+        flex: 1;
+        img {
+          width: 440px;
+          height: 517px;
+          pointer-events: none;
+        }
+      }
+      #banner-price {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        padding-left: 15px;
+        #banner-price-info {
+          h5 {
+            font-weight: bold;
+            font-size: 20px;
+            font-family: "Montserrat";
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            font-family: "Open Sans";
+            margin: 25px 0;
+          }
+          button {
+            padding: 12px 48px;
+            border-radius: 30px;
+            background-color: transparent;
+            border: 2px solid var(--dark);
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

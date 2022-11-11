@@ -1,0 +1,84 @@
+/*SEÇÃO BEST CHOICE*/
+@use "mixins";
+#best-choice {
+  background-color: var(--gray);
+  height: 670px;
+  h2 {
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--dark);
+    font-family: "Montserrat";
+    text-align: center;
+    width: 100%;
+    padding: 60px 0px 30px 0px;
+  }
+  #container-catalog {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0px;
+    ul {
+      display: flex;
+      gap: 10px;
+      list-style-type: none;
+      flex-wrap: wrap;
+      li {
+        width: 277px;
+        height: 448px;
+        background-color: var(--white);
+        cursor: pointer;
+        padding: 10px;
+        #fig09 {
+          @include mixins.bg-img("catalog-fig09.jpg");
+          #layer {
+            @include mixins.layer;
+            button {
+              @include mixins.btn;
+            }
+          }
+        }
+        #fig10 {
+          @include mixins.bg-img("catalog-fig10.jpg");
+          #layer {
+            @include mixins.layer;
+            button {
+              @include mixins.btn;
+            }
+          }
+        }
+        #fig11 {
+          @include mixins.bg-img("catalog-fig11.jpg");
+          #layer {
+            @include mixins.layer;
+            button {
+              @include mixins.btn;
+            }
+          }
+        }
+        #fig12 {
+          @include mixins.bg-img("catalog-fig12.jpg");
+          #layer {
+            @include mixins.layer;
+            button {
+              @include mixins.btn;
+            }
+          }
+        }
+        h6 {
+          font-weight: 400;
+          font-size: 18px;
+          font-family: "Montserrat";
+          color: var(--dark);
+          margin: 30px 10px 21px;
+        }
+        span {
+          font-weight: bold;
+          font-size: 20px;
+          color: var(--dark);
+          font-family: "Montserrat";
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
